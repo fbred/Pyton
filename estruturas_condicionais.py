@@ -22,8 +22,8 @@ elif idade == IDADE_ESPECIAL:
     print("Pode tirar sobre condições especiais")
 else:
     print("Ainda não pode tirar a CNH")'''
-
-#if aninhado (if dentro de if)
+"""
+##########if aninhado (if dentro de if)##########
 conta_normal = False
 conta_universitaria = False
 
@@ -45,3 +45,11 @@ elif conta_universitaria:
         print("Saldo insuficiente")
 else:
     print("Tipo de conta não identificado!")
+"""
+##########if ternário#######
+saldo = 2000
+saque = 5000
+
+status = "Sucesso" if saldo >= saque else "Falha"
+
+print(f"{status} ao realizar o saque!")
