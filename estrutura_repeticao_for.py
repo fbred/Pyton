@@ -7,4 +7,9 @@ for letra in texto:
 
 else:
     print()
-    print("Fim do programa")
+    print("Fim do programa") 
+
+#UTILIZANDO O RANGE NO for
+
+for numero in range(0, 51, 5):
+    print(numero, end=" ")
