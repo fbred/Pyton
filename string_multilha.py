@@ -7,3 +7,16 @@ Eu estou aprendendo Pyton.
 '''
 
 print(mensagem)
+
+print("""
+      =============== MENU ================
+      
+        1 - Opção 1
+        2 - Opção 2
+        3 - Opção 3
+      
+      =====================================
+        
+      SELECIONE UMA OPÇÃO DO MENU ACIMA.
+      
+      """)
