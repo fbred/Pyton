@@ -11,5 +11,5 @@ else:
 
 #UTILIZANDO O RANGE NO for
 
-for numero in range(0, 51, 5):
-    print(numero, end=" ")
+# for numero in range(0, 51, 5):
+#     print(numero, end=" ")
