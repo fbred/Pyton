@@ -68,3 +68,22 @@ conjuntoa.add(4) #adiciona o elemento 4 ao conjunto
 conjuntoa.add(5) #adiciona o elemento 5 ao conjunto
 conjuntoa.add(5) #não adiciona o elemento 5 ao conjunto, pois já existe
 print(conjuntoa)
+
+###########{}.clear()##############
+conjuntoa = {1, 2, 3}
+conjuntoa.clear() #remove todos os elementos do conjunto
+print(conjuntoa)
+
+###########{}.copy()##############
+conjuntoa = {1, 2, 3}
+conjuntoa_copia = conjuntoa.copy() #cria uma cópia do conjunto
+print(conjuntoa_copia)
+
+###########{}.discard()##############
+conjuntoa = {1, 2, 3}
+conjuntoa.discard(2) #remove o elemento 2 do conjunto
+print(conjuntoa)
+conjuntoa.discard(4) #não faz nada, pois o elemento 4 não está no conjunto
+print(conjuntoa)
+conjuntoa.remove(3) #remove o elemento 3 do conjunto
+print(conjuntoa)
