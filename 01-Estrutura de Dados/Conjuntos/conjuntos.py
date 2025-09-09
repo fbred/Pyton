@@ -26,3 +26,11 @@ conjuntoa = {1, 2, 3}
 conjuntob = {3, 4, 5}
 conjuntoc = conjuntoa.intersection(conjuntob) #mostra apenas os elementos que existem em ambos os conjuntos
 print(conjuntoc)
+
+###########{}.difference()##############
+conjuntoa = {1, 2, 3}
+conjuntob = {3, 4, 5}
+conjuntoc = conjuntoa.difference(conjuntob) #mostra apenas os elementos que existem no primeiro conjunto e não no segundo
+conjuntod = conjuntob.difference(conjuntoa) #mostra apenas os elementos que existem no segundo conjunto e não no primeiro
+print(conjuntoc)
+print(conjuntod)
