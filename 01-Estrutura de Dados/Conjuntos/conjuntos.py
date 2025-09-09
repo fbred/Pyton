@@ -34,3 +34,19 @@ conjuntoc = conjuntoa.difference(conjuntob) #mostra apenas os elementos que exis
 conjuntod = conjuntob.difference(conjuntoa) #mostra apenas os elementos que existem no segundo conjunto e não no primeiro
 print(conjuntoc)
 print(conjuntod)
+
+###########{}.symmetric_difference()##############
+conjuntoa = {1, 2, 3}
+conjuntob = {3, 4, 5}
+conjuntoc = conjuntoa.symmetric_difference(conjuntob) #mostra apenas os elementos que não existem em ambos os conjuntos
+print(conjuntoc)
+
+###########{}.issubset()##############
+conjuntoa = {1, 2, 3}
+conjuntob = {1, 2, 3, 4, 5}
+print(conjuntoa.issubset(conjuntob)) #mostra se o primeiro conjunto é um subconjunto do segundo
+
+###########{}.issuperset()##############
+conjuntoa = {1, 2, 3}
+conjuntob = {1, 2}
+print(conjuntoa.issuperset(conjuntob)) #mostra se o primeiro conjunto é um superconjunto do segundo
