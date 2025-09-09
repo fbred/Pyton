@@ -87,3 +87,16 @@ conjuntoa.discard(4) #não faz nada, pois o elemento 4 não está no conjunto
 print(conjuntoa)
 conjuntoa.remove(3) #remove o elemento 3 do conjunto
 print(conjuntoa)
+
+############{}.pop()##############
+conjuntoa = {1, 2, 3,4,5}
+elemento_removido = conjuntoa.pop() #remove um elemento aleatório do conjunto
+print(elemento_removido)
+print(conjuntoa)
+
+############{}.remove()##############
+conjuntoa = {1, 2, 3,4,5}
+conjuntoa.remove(2) #remove o elemento 2 do conjunto
+print(conjuntoa)
+#conjuntoa.remove(6) #gera um erro, pois o elemento 6 não está no conjunto
+#print(conjuntoa)           
