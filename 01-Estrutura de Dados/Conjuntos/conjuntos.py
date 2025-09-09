@@ -99,4 +99,13 @@ conjuntoa = {1, 2, 3,4,5}
 conjuntoa.remove(2) #remove o elemento 2 do conjunto
 print(conjuntoa)
 #conjuntoa.remove(6) #gera um erro, pois o elemento 6 não está no conjunto
-#print(conjuntoa)           
+#print(conjuntoa)  
+
+###########len()##############
+conjuntoa = {1, 2, 3,4,5}
+print(len(conjuntoa)) #mostra a quantidade de elementos do conjunto
+
+###########{}.in##############
+conjuntoa = {1, 2, 3,4,5}
+print(2 in conjuntoa) #mostra se o elemento 2 está no conjunto
+print(6 in conjuntoa) #mostra se o elemento 6 está no conjunto
