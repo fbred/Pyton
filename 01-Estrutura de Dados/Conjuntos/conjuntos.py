@@ -61,3 +61,10 @@ print(conjuntoa.isdisjoint(conjuntob)) #mostra se os dois conjuntos não têm el
 print(conjuntob.isdisjoint(conjuntoa)) #mostra se os dois conjuntos não têm elementos em comum
 print(conjuntoc.isdisjoint(conjuntoa)) #mostra se os dois conjuntos não têm elementos em comum
 print(conjuntoa.isdisjoint(conjuntob)) #mostra se os dois conjuntos não têm elementos em comum
+
+###########{}.add()##############
+conjuntoa = {1, 2, 3}
+conjuntoa.add(4) #adiciona o elemento 4 ao conjunto
+conjuntoa.add(5) #adiciona o elemento 5 ao conjunto
+conjuntoa.add(5) #não adiciona o elemento 5 ao conjunto, pois já existe
+print(conjuntoa)
