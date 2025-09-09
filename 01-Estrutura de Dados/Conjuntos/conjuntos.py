@@ -45,8 +45,19 @@ print(conjuntoc)
 conjuntoa = {1, 2, 3}
 conjuntob = {1, 2, 3, 4, 5}
 print(conjuntoa.issubset(conjuntob)) #mostra se o primeiro conjunto é um subconjunto do segundo
+print(conjuntob.issubset(conjuntoa)) #mostra se o segundo conjunto é um subconjunto do primeiro
 
 ###########{}.issuperset()##############
 conjuntoa = {1, 2, 3}
 conjuntob = {1, 2}
 print(conjuntoa.issuperset(conjuntob)) #mostra se o primeiro conjunto é um superconjunto do segundo
+print(conjuntob.issuperset(conjuntoa)) #mostra se o segundo conjunto é um superconjunto do primeiro
+
+###########{}.isdisjoint()##############
+conjuntoa = {1, 2, 3}
+conjuntob = {4, 5, 6}
+conjuntoc = {10,11,2}
+print(conjuntoa.isdisjoint(conjuntob)) #mostra se os dois conjuntos não têm elementos em comum
+print(conjuntob.isdisjoint(conjuntoa)) #mostra se os dois conjuntos não têm elementos em comum
+print(conjuntoc.isdisjoint(conjuntoa)) #mostra se os dois conjuntos não têm elementos em comum
+print(conjuntoa.isdisjoint(conjuntob)) #mostra se os dois conjuntos não têm elementos em comum
