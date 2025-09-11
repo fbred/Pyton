@@ -105,5 +105,5 @@ contatos5 = {
 
 del contatos5["contato1"]["telefone"] #remove um campo especifico passado do dicionário
 print(contatos5)
-del contatos5["contato3"] #remove um dicionário inteiro dentro do dicionário aninhado
+del contatos5["contato3"] #remove uma chave completa do dicionário
 print(contatos5)
