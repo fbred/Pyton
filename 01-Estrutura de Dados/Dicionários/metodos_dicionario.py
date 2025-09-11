@@ -85,3 +85,11 @@ print(contatos3.values())
 
 ##############{}.in()##############
 # Verificar se uma chave existe em um dicionário
+
+contatos4 = {
+    "contato1": {"nome": "contato1", "telefone": "3333:1111"},
+    "contato2": {"nome": "contato2", "telefone": "3333:2222"},
+    "contato3": {"nome": "contato3", "telefone": "3333:3333"},
+}   
+retorno = "nome" in contatos4["contato1"]
+print(retorno)
