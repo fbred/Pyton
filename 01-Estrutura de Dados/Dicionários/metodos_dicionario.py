@@ -93,3 +93,17 @@ contatos4 = {
 }   
 retorno = "nome" in contatos4["contato1"]
 print(retorno)
+
+##############{}.dell()##############
+# remove um objeto passado para ele
+
+contatos5 = {
+    "contato1": {"nome": "contato1", "telefone": "3333:1111"},
+    "contato2": {"nome": "contato2", "telefone": "3333:2222"},
+    "contato3": {"nome": "contato3", "telefone": "3333:3333"},
+}   
+
+del contatos5["contato1"]["telefone"] #remove um campo especifico passado do dicionário
+print(contatos5)
+del contatos5["contato3"] #remove um dicionário inteiro dentro do dicionário aninhado
+print(contatos5)
