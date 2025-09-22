@@ -1,4 +1,5 @@
-def criar_carro(modelo, ano, placa, /,marca, motor, combustivel):
+#o / define que só pode passar por posição, já tendo * e / pode-se usar os dois
+def criar_carro(modelo, ano, placa, /, *,marca, motor, combustivel):
     print(modelo, ano, placa, marca, motor, combustivel)
 
 
