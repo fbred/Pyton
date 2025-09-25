@@ -17,9 +17,17 @@ class bicicleta:
 
     def correr(self):
         print("Bicicleta em movimento...")
-    #médor para retornar as instâncias da classe
-    def  __str__(self):
-        return f"bicicleta: "
+
+    # #método para retornar as instâncias da classe
+    # def  __str__(self):
+    #     return f"bicicleta: {self.cor, self.modelo, self.ano, self.valor}"
+
+    #método para retornar as instâncias da classe otimizado / Utilizando os atributos que a classe tem como __name__, __dict__, __class__
+    # o ', '.join() faz a contaneção do intens da lista com os caracteres que é repassado
+    # no f'{chave}={valor} é feito a concatenação dos intens percoridos no laço de repetição for
+    # no --> for chave, valor in self.__dict__.items() ->>>  é percorido os itens chave valor através do atributo __dict__ e é armazanado como dicionário
+    def __str__(self):
+        return f"{self.__class__.__name__}: {', '.join([f'{chave}={valor}' for chave, valor in self.__dict__.items()])}"
 
 #instanciamento do objeto
 b1 = bicicleta("vermelha", "caloi", 2023, 600)
@@ -33,5 +41,5 @@ b1.parar()
 print(b1.cor, b1.ano, b1.modelo, b1.valor)
 
 #criando um segundo objeto
-b2 = bicicleta("Azul", "Dois amor", 2025, 251)
-
+b2 = bicicleta("Azul", "Dois anos", 2025, 251)
+print(b2)
