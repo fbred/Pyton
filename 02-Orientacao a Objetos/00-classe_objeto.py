@@ -1,6 +1,6 @@
 #calsse
 class bicicleta:
-    #caracteristicas do objeto que a classe define
+    #Atributos do objeto que a classe define
     def __init__(self, cor, modelo, ano, valor): #inicializador
         self.cor = cor
         self.modelo = modelo
