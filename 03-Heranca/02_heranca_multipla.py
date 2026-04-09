@@ -16,20 +16,15 @@ class Ave(Animal):
         super().__init__(**kw)
     
 
+# class FalarMixin:
+#     def falar(self):
+#         return "Oi estou falando"
 
-# class Cachorro(Mamifero):
-#     pass
 
-class Gato(Mamifero):
-    pass
-
-# class Leao(Mamifero):
-#     pass
-
-class Ornitorrinco(Mamifero,Ave):
+class Ornitorrinco(Mamifero, Ave): #FalarMixin):
     def __init__(self, cor_bico, cor_do_pelo, nro_patas):
-        print(Ornitorrinco.__mro__) #Mostra os passos que estão sendo dados dentro da classe/herança para pegas os atributos
-        print(Ornitorrinco.mro()) #Mostra os passos que estão sendo dados dentro da classe/herança para pegas os atributos
+        # print(Ornitorrinco.__mro__) #Mostra os passos que estão sendo dados dentro da classe/herança para pegas os atributos
+        # print(Ornitorrinco.mro()) #Mostra os passos que estão sendo dados dentro da classe/herança para pegas os atributos
 
         super().__init__(cor_do_pelo=cor_do_pelo, cor_bico=cor_bico, nro_patas=nro_patas)
 
@@ -38,3 +33,4 @@ class Ornitorrinco(Mamifero,Ave):
 
 ornitorrinco = Ornitorrinco(nro_patas=2,cor_do_pelo="preto",cor_bico="vermelho")
 print(ornitorrinco)
+#print(ornitorrinco.falar())
