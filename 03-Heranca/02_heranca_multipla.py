@@ -27,7 +27,11 @@ class Gato(Mamifero):
 #     pass
 
 class Ornitorrinco(Mamifero,Ave):
-    pass
+    def __init__(self, cor_bico, cor_do_pelo, nro_patas):
+        print(Ornitorrinco.__mro__) #Mostra os passos que estão sendo dados dentro da classe/herança para pegas os atributos
+        print(Ornitorrinco.mro()) #Mostra os passos que estão sendo dados dentro da classe/herança para pegas os atributos
+
+        super().__init__(cor_do_pelo=cor_do_pelo, cor_bico=cor_bico, nro_patas=nro_patas)
 
 # gato = Gato(4,"marrom")
 # print(gato)
