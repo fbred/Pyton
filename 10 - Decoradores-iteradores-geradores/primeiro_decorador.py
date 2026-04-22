@@ -6,8 +6,8 @@ def meu_decorador(funcao):
     return envelope
 
 @meu_decorador #usando arroba na função interna o Python já faz a interpretação, o chamado açucar sintático
-def ola_mundo():
-    print("Olá Mundo!")
+def ola_mundo(nome):
+    print(f"Olá Mundo! {nome}")
 
 # ola_mundo = meu_decorador(ola_mundo)
 ola_mundo()
