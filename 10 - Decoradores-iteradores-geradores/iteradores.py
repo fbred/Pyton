@@ -1,3 +1,5 @@
+#usar o iterador quando a implementação for complexa.
+
 class MeuIterador:
     def __init__(self, numeros: list[int]): #inicializador da classe
         self.numeros = numeros

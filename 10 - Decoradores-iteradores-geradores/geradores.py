@@ -1,3 +1,5 @@
+#usar um gerador quando o código for simples.
+
 def meu_gerador(numeros: list[int]):
     for numero in numeros:
         yield numero * 2
